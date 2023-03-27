@@ -1,0 +1,247 @@
+body{
+    max-width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#head{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    background-color: black;
+
+}
+body{
+    background-color: black;
+}
+#logo img{
+    min-height: 5%;
+    max-width: 5%;
+}
+#img1{
+    max-width: 60%;
+    max-height: 55%;
+}
+#img1 img{
+    height: 650px;
+    width: 100%;
+}
+i{
+    color: orangered;
+}
+nav{
+    position: absolute;
+    font-size: 35px;
+    left: 45%;
+    z-index: 3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 2%;
+}
+nav ul{
+    display: flex;
+    position: absolute;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 7%;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    bottom: -6px;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+#form-btn{
+    display: flex;
+    position: relative;
+}
+.join{
+    position: relative;
+    cursor: pointer;
+    margin: 2px 20px;
+}
+.join::after{
+    content: ' ';
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background-color: orangered;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+.join.b::after{
+    width: 100%;
+}
+.col-2{
+    position: absolute;
+    align-items: end;
+    left: 0%;
+    width: 35%;
+    /* width: 100%; */
+    min-width: 500px;
+    height: 250px;
+    background-color: white;
+    font-style: italic;
+    font-weight: 32px;
+    height: 500px;
+    top: 15%;
+
+}
+.form-contanier{
+    display: grid;
+}
+.form-btn{
+    font-size: 24px;
+}
+#login{
+    margin-top: 50px;
+    width: 100%;
+    height: 200%;
+    background-color: transparent;
+    position: relative;
+    /* left: -100%; */
+    transition: 1s;
+
+
+}
+#login form{
+    display: grid;
+    background-color: white;
+    height: 100%;
+    position: relative;
+}
+#login input{
+    width: 95%;
+    margin: 2px auto;
+    border: none;
+    border-bottom: solid orangered 5px;
+    height: 50px;
+    font-size: 32px;
+    background-color: transparent;
+}
+#login input:focus{
+    outline: none;
+}
+#login button{
+    margin: 5px auto;
+    height: 45px;
+    width: 75%;
+    background-color: orange;
+    font-size: 24px;
+    transition: 1s;
+}
+#login button:hover{
+    background-color: orangered;
+}
+
+#register{
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+ 
+}
+#register form{
+    display: none;
+    background-color: white;
+    height: 45%;
+}
+#register input{
+    width: 95%;
+    margin: 2px auto;
+    border: none;
+    border-bottom: solid orangered 5px;
+    height: 50px;
+    font-size: 32px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+#register input:focus{
+    outline: none;
+}
+#register button{
+    margin: 5px auto;
+    height: 45px;
+    width: 75%;
+    font-size: 24px;
+    background-color: orange;
+    transition: 1s;
+}
+#register button:hover{
+    background-color: orangered;
+}
+@media only screen and (max-width: 1450px) {
+   
+    nav{
+        display: grid;
+        position: relative;
+        font-size: 35px;
+        left: 0;
+        z-index: 3;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* background-color: green; */
+        /* top: 50%; */
+        width: 100%;
+        height: 45%;
+    }
+    nav ul{
+        display: grid;
+        margin: 0 35% 0 0;
+        left: 45%;
+        gap: 10px;
+        background-color: black;
+        width: 95%;
+        height: 65%;
+        font-size: 32px;
+        position: absolute;
+        top: -0px;
+    }
+    nav ul li{
+        list-style: none;
+        margin-left: 7%;
+        width: 25%;
+    }
+    nav ul li a{
+        color: pink;
+        text-decoration: none;
+    }
+    #btn1{
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: 100%;
+        z-index: 3;
+    }
+    
+} 
